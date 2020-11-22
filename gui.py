@@ -17,12 +17,12 @@ conn = sqlite3.connect('data_expenses.db')
 c = conn.cursor()
 
 # Create Table
-#c.execute("""CREATE TABLE expenses (
-#        item text,
-#        price integer,
-#        category text,
-#        date text
-#        )""")
+c.execute("""CREATE TABLE expenses (
+        item text,
+        price integer,
+        category text,
+        date text
+        )""")
 
 # Create Submit function for database
 def submit():
